@@ -1,0 +1,30 @@
+#form1 {
+	padding: 20px;
+}
+#row1 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#container1{
+	padding-top: 20px;
+}
+#atuser{
+	font-size: 18px;
+	font-style: italic;
+}
+#followeruser {
+	font-size: 22px;
+	text-align: center;
+}
+#followinguser {
+	font-size: 22px;
+	text-align: center;
+}
+#reposuser {
+	font-size: 22px;
+	text-align: center;
+}
+#gistsuser {
+	font-size: 22px;
+	text-align: center;
+}

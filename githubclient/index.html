@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>GitHub Client search</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<div class="row" id="row1">
+			<div class="main col-md-2">
+				<img src="img/Octocat.jpg" class="img-responsive img-circle">
+			</div>
+			<div class="col-md-8 text-danger">
+				<h1>Github Search</h1>
+				<p>Powered by AJAX</p>
+			</div>
+		</div>
+		<div class="row">
+			<form class="search" id="form1">
+				<input type="text" name="login" class="form-control" placeholder="escriba el Usuario de GitHub" required>
+			</form>
+				<div class="alert alert-danger" id="error" style="display: none">
+				Oops, el usuario no existe :(
+				</div>
+				<div class="container" id="container1">
+				<div class="main col-md-4" id="contentuserimg">
+					<a href="" id="linkuser"><img src="" class="img-responsive img-circle" id="avatar"></a>
+				</div>
+					<div class="panel-body col-md-8" id="contentuserdata">
+					<div class="username"><h2 id="usernameh2"></h2></div>
+					<div class="userlocation"><p id="locationuser"></p></div>
+					<div class="userat"><p id="atuser"></p></div><br><br>
+					<div class="userfollower col-md-6"><div id="followeruser"></div></div>
+					<div class="userfollowing col-md-6"><div id="followinguser"></div></div>
+					<div class="userrepos col-md-6"><div id="reposuser"></div></div>
+					<div class="usergists col-md-6"><div id="gistsuser"></div></div>
+					</div>
+				</div>
+		</div>
+	</div>
+	<footer><h3 style="text-align: center;">GitHub Search &copy2017</h3></footer>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
