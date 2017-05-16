@@ -18,6 +18,7 @@ promesa.done(data=>console.log(data))
 
 $('form').submit(function(event){
 	$('#error').hide();
+	$('#container1').hide();
 	event.preventDefault();
 	//serialize
 	//serializeArray
@@ -29,9 +30,10 @@ $('form').submit(function(event){
 });
 
 function showUserInfo(user){
+	$('#container1').show();
 	$('.username').append($('<div>').append($('<h2 id="usernameh2">').append(user.name)));
-	$('.userat').append($('<div>').append($('<p id="atuser">').append("@"+user.login)));
 	$('.userlocation').append($('<div>').append($('<p id="locationuser">').append(user.location)));
+	$('.userat').append($('<div>').append($('<p id="atuser">').append("@"+user.login)));
 	$('.userfollower').append($('<div>').append($('<div id="followeruser" class="alert alert-info" role="alert">').append("Seguidores: "+user.followers)));
 	$('.userfollowing').append($('<div>').append($('<div id="followinguser" class="alert alert-info" role="alert">').append("Seguidos: "+user.following)));
 	$('.userrepos').append($('<div>').append($('<div id="reposuser" class="alert alert-success" role="alert">').append("Repositorios: "+user.public_repos)));

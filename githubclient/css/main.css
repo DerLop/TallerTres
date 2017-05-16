@@ -4,27 +4,56 @@
 #row1 {
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-top: 30px;
 }
 #container1{
-	padding-top: 20px;
+	box-shadow: 4px 4px 4px #aaa;
+	background-color:  #f4f4f4;
+	background-image: url("http://s1.1zoom.me/big0/45/Milky_Way_Stars_Sky_438379.jpg");
+	background-size: cover;
+}
+#usernameh2{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 50px;
+	margin-left: 13px;
+	color: white;
+	text-shadow: 1px 1px 1px #aaa;
+}
+#locationuser{
+	font-family: 'Raleway', sans-serif;
+	margin-left: 13px;
+	color: white;
+	text-shadow: 1px 1px 1px #aaa;
 }
 #atuser{
-	font-size: 18px;
-	font-style: italic;
+	font-family: 'Quicksand', sans-serif;
+	margin-top: -8px;
+	font-size: 17px;
+	margin-left: 13px;
+	color: white;
+	text-shadow: 1px 1px 1px #aaa;
+}
+#avatar {
+	box-shadow: 2px 2px 2px #aaa;
+	background-color: #ffffff;
 }
 #followeruser {
-	font-size: 22px;
+	font-size: 24px;
 	text-align: center;
+	font-family: 'Pacifico', cursive;
 }
 #followinguser {
-	font-size: 22px;
+	font-size: 24px;
 	text-align: center;
+	font-family: 'Pacifico', cursive
 }
 #reposuser {
-	font-size: 22px;
+	font-size: 24px;
 	text-align: center;
+	font-family: 'Pacifico', cursive
 }
 #gistsuser {
-	font-size: 22px;
+	font-size: 24px;
 	text-align: center;
+	font-family: 'Pacifico', cursive
 }
