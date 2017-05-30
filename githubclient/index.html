@@ -35,14 +35,31 @@
 							<div class="username"><h2 id="usernameh2"></h2></div>
 							<div class="userlocation"><p id="locationuser"></p></div>
 							<div class="userat"><p id="atuser"></p></div>
-							<div class="userfollower col-md-6"><div id="followeruser"></div></div>
-							<div class="userfollowing col-md-6"><div id="followinguser"></div></div>
-							<div class="userrepos col-md-6"><div id="reposuser"></div></div>
-							<div class="usergists col-md-6"><div id="gistsuser"></div></div>
+							<div id="usercommondata">
+							<div class="userfollower col-md-6"><div class="alert alert-info" role="alert">Seguidores: <span id="followeruser"></span></div></div>
+							<div class="userfollowing col-md-6"><div class="alert alert-info" role="alert">Seguidos: <span id="followinguser"></span></div></div>
+							<div class="userrepos col-md-6"><div class="alert alert-success" role="alert">Repositorios: <span id="reposuser"></span></div></div>
+							<div class="usergists col-md-6"><div class="alert alert-success" role="alert">Gists: <span id="gistsuser"></span></div></div>
+							</div>
 						</div>
 					</div>	
 				</div>
 			</div>
+			<div class="jumbotron jumbotron-fluid container">
+				<div id="followers-list">
+					<div id="template">
+						<div class="row">
+							<div class="col-xs-3">
+								<img src="" class="avatar">
+							</div>
+							<div class="col-xs-9">
+								<h3>login</h3>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>

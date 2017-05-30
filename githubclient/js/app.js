@@ -26,11 +26,12 @@ $('form').submit(function(event){
 	var log = $('input').val();
 	var promesa = $.get('https://api.github.com/users/'+log);
 	promesa.done(showUserInfo)
+		.done(getFollowers)
 		.fail(showError)
 });
 
 function showUserInfo(user){
-	$('#container1').show();
+	/*$('#container1').show();
 	$('.username').append($('<div>').append($('<h2 id="usernameh2">').append(user.name)));
 	$('.userlocation').append($('<div>').append($('<p id="locationuser">').append(user.location)));
 	$('.userat').append($('<div>').append($('<p id="atuser">').append("@"+user.login)));
@@ -47,7 +48,17 @@ function showUserInfo(user){
 	$('#followinguser').remove();
 	$('#reposuser').remove();
 	$('#gistsuser').remove();
-	$('input').val("");
+	$('input').val("");*/
+	$('#container1').show();
+	$('#usernameh2').text(user.name);
+	$('#locationuser').text(user.location);
+	$('#atuser').text("@"+user.login);
+	$('#followeruser').text(user.followers);
+	$('#followinguser').text(user.following);
+	$('#reposuser').text(user.public_repos);
+	$('#gistsuser').text(user.public_gists);
+	$('#avatar').attr('src',user.avatar_url);
+	$('#linkuser').attr('href',user.html_url);
 }
 function showError(error) {
 	$('#error').show();
@@ -58,4 +69,23 @@ function showError(error) {
 				});*/
 	/*$('#usernameh2').remove();
 	$('#avatar').remove();*/
+}
+function getFollowers(){
+		var login = $('input').val();
+		$.get('https://api.github.com/users/'+login+'/followers')
+			.done(showUserFollowers)
+			.fail(showError)
+}
+
+function showUserFollowers(followers){
+	var template = $('#template')
+	var followerTpl;
+	for (var i = 0; i < followers.length; i++) {
+			var f = followers[i];
+			followerTpl = $(template).clone();
+			followerTpl.find('h3').text(f.login);
+			followerTpl.find('img').attr('src',f.avatar_url);
+			/*demas atributos*/
+			$('#followers-list').append(followerTpl);
+		}
 }

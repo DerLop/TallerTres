@@ -37,23 +37,21 @@
 	box-shadow: 2px 2px 2px #aaa;
 	background-color: #ffffff;
 }
-#followeruser {
+#usercommondata {
 	font-size: 24px;
 	text-align: center;
 	font-family: 'Pacifico', cursive;
 }
-#followinguser {
-	font-size: 24px;
-	text-align: center;
-	font-family: 'Pacifico', cursive
+#template{
+	border: solid 1px #ccc;
+	box-shadow: 4px 4px 4px #ccc;
+	padding: 15px;
+	margin: 10px;
 }
-#reposuser {
-	font-size: 24px;
-	text-align: center;
-	font-family: 'Pacifico', cursive
-}
-#gistsuser {
-	font-size: 24px;
-	text-align: center;
-	font-family: 'Pacifico', cursive
+
+#template img{
+	height: 40px;
+	width: 40px;
+	border: solid 1px #ccc;
+	border-radius: 50%;
 }
